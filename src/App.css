@@ -1,0 +1,27 @@
+body {
+  background-color: #dfdfdf;
+  margin: 10%;
+}
+
+.nav-bar {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 5px;
+}
+
+.link {
+  padding-left: 20px;
+}
+
+.icon-button {
+  margin-left: auto;
+}
+
+.page-container {
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 5px;
+  margin-top: 20px;
+}
