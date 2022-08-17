@@ -1,6 +1,6 @@
 const CHECK = 'bookstore/categories/CHECK';
 
-//Reducer
+// Reducer
 export default function categoriesReducer(state = [], action = {}) {
   switch (action.type) {
     case CHECK:
