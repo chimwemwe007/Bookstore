@@ -2,7 +2,7 @@
 
 # Book Store
 
-Initialise project with react components
+Configure Redux Store and write actions and reducer for adding and removing books.
 
 ## Getting Started
 
@@ -20,12 +20,13 @@ Initialise project with react components
 - Html
 - CSS
 - Javascript
+- React
 
 ## Authors
 
-👤 **Hamma**
+👤 **Chimwemwe Mkandawire**
 
-- GitHub: [@hammaazarok](https://github.com/chimwemwe007)
+- GitHub: [@Chimwemwe007](https://github.com/chimwemwe007)
 
 
 ## 🤝 Contributing
