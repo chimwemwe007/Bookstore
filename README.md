@@ -2,7 +2,7 @@
 
 # Book Store
 
-Configure Redux Store and write actions and reducer for adding and removing books.
+Configure Redux Store and write actions and reducer for adding and removing books. Configure ApI to be able to use it.
 
 ## Getting Started
 
