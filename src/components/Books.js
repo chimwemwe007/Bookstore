@@ -1,27 +1,41 @@
-import React from 'react';
+import { useSelector, shallowEqual } from 'react-redux';
 import AddBook from './AddBook';
 import Book from './Book';
 
-class Books extends React.Component {
-  constructor() {
-    super();
-    this.state = {
-      Books: [
-        { id: 1, name: 'In Search of Lost Time', author: 'Marcel Proust' },
-        { id: 2, name: 'One Hundred Years of Solitude', author: ' Gabriel Garcia Marquez' }],
-    };
-  }
+function Books() {
+  const { error, loading, items } = useSelector((state) => state.books, shallowEqual);
+  const Books = items;
 
-  render() {
-    const { Books } = this.state;
+  if (error) {
     return (
-      <>
-        {Books.map((m) => <Book key={m.id} name={m.name} author={m.author} />)}
-        <AddBook />
-      </>
-
+      <div>
+        Error!
+        {error.message}
+      </div>
     );
   }
+
+  if (loading) {
+    return <div>Loading...</div>;
+  }
+
+  return (
+    <>
+      <ul className="books">
+        {Books.map((m) => (
+          <Book
+            key={m.id}
+            id={m.id}
+            name={m.name}
+            author={m.author}
+            category={m.category}
+          />
+        ))}
+      </ul>
+      <div className="horizontal-divider" />
+      <AddBook />
+    </>
+  );
 }
 
 export default Books;
