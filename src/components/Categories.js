@@ -1,6 +1,8 @@
 import {
   useDispatch, useSelector, shallowEqual,
 } from 'react-redux';
+/* eslint-disable */
+import React, { Component } from 'react';
 import { checkCategories } from '../redux/categories/categories';
 
 const Categories = () => {
@@ -13,10 +15,10 @@ const Categories = () => {
     h2.innerHTML = categories;
   };
   return (
-    <>
+    <div>
       <h2 className="header"> </h2>
       <button type="button" className="primary-button" onClick={performCheck}>Check status</button>
-    </>
+    </div>
   );
 };
 export default Categories;

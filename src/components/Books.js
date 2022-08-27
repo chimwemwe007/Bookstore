@@ -1,4 +1,6 @@
 import { useSelector, shallowEqual } from 'react-redux';
+/* eslint-disable */
+import React, { Component } from 'react';
 import AddBook from './AddBook';
 import Book from './Book';
 
@@ -8,6 +10,7 @@ function Books() {
 
   if (error) {
     return (
+      /* eslint-disable */
       <div>
         Error!
         {error.message}

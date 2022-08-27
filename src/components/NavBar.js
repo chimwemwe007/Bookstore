@@ -1,4 +1,6 @@
 import { NavLink } from 'react-router-dom';
+/* eslint-disable */
+import React, { Component } from 'react';
 import { BsFillPersonFill } from 'react-icons/bs';
 
 const NavBar = () => (

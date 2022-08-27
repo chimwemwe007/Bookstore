@@ -1,5 +1,7 @@
 import { useDispatch } from 'react-redux';
 import { v4 as rid } from 'uuid';
+/* eslint-disable */
+import React, { Component } from 'react';
 import { addBook } from '../redux/books/books';
 
 const AddBook = () => {

@@ -12,6 +12,7 @@ export default function categoriesReducer(state = [], action = {}) {
 }
 
 // Action Creators
+/* eslint-disable */
 export function checkCategories() {
   return { type: CHECK };
 }
